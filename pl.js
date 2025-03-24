@@ -1,6 +1,6 @@
 let adultos = 1;
 let crianças = 1;
-let destino = "Norte";
+let destino = "Ásia";
 let classe = "Executiva";	
 
 
@@ -57,11 +57,11 @@ else if (destino === "Norte" && classe === "Executiva") {
 
 if (destino === "Sul" && classe === "Econômica") {
     preco = 3000;
-    total = adultos + crianças;
+    total = preco * (adultos + crianças);
 }
 else if (destino === "Sul" && classe === "Executiva") {
     preco = 4000;
-    total = adultos + crianças;
+    total = preco * (adultos + crianças);
 }
 
 console.log("Adultos: " + adultos, "/  Crianças: " + crianças, "/  Destino: " + destino, "/  Classe: " + classe, "/  Total: R$" + total);
