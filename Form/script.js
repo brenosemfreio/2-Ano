@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var senha = document.getElementById("senha").value;
         var mensagem = document.getElementById("mensagem");
         
-        if (usuario === "admin" && senha === "1234") {
+        if (usuario === "usuario" && senha === "1234") {
             mensagem.textContent = "Login bem-sucedido!";
             mensagem.style.color = "green";
         } else {
