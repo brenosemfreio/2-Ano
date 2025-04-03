@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Seguradora</title>
+</head>
+<body>
+    <form id="formSeguro">
+        <label>Nome do Segurado:
+            <input type="text" id="nome" required>
+        </label>
+        
+        <label>Idade:
+            <input type="number" id="idade" required>
+        </label>
+
+        <label>Estado Cívil:
+            <select id="estadoCivil" required>
+                <option value="solteiro">Solteiro</option>
+                <option value="casado">Casado</option>
+            </select>
+        </label>
+
+        <label>Número de Motoristas Adicionais:
+            <input type="number" id="motoristasAdicionais" value="0" min="0" required>
+        </label>
+
+        <label>Nome do Veículo:
+            <input type="text" id="Veiculo" required>
+        </label>
+
+        <label>Classe do Veículo:
+            <select id="classeVeiculo" required>
+                <option value="A">Classe A</option>
+                <option value="B">Classe B</option>
+                <option value="C">Classe C</option>
+            </select>
+        </label>
+        
+        <button type="button" onclick="calcularSeguro()">Calcular Seguro</button>
+        <h3 class="resultado">Resultado:</h3>    
+        <p id="resultado"></p>
+    </form> 
+</body>
+</html>
