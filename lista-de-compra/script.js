@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var botao = document.getElementById('adicionarItemBtn');
     var campo = document.getElementById('itemInput');
 
-    // Mostrar itens iniciais
     for (var i = 0; i < lista.length; i++) {
         var li = document.createElement('li');
         li.textContent = lista[i];
