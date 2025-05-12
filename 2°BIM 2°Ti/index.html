@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo1">Filtro de Clientes</h1>
+
+    <div class="tcp">
+    <p>Este sistema filtra os dados cadastrados no objeto javascript e traz apenas os clientes com idade >=18 anos.</p>
+    <!-- Aparecerá em uma lista os usuarios que atenderem aos criterios de filtro-->
+    <ul id="listaClientesAdultos"></ul>
+
+    <!-- Este botão vai chamar a função que irá mostrar os clientes filtrados -->
+
+    <button onclick="mostrarClientesAdultos()" class="botao1">Mostrar Clientes</button>
+    </div>
+
+    <!-- Campos para cadastro -->
+    <div class="ada">
+    <h1 class="titulo2">Cadastrar Novo Cliente</h1>
+
+    <div class="form">
+    <Label> <br>
+        <input type="text" id="nomeCliente" placeholder="Nome" class="hope"
+    </Label>
+    <label> <br>
+        <input type="number" id="idadeCliente" placeholder="Idade" class="hope1">
+    </label>
+    <label> <br>
+        <input type="email" id="emailCliente" placeholder="Email" class="hope2">
+    </label>
+    </div>
+
+    <!-- Botão para cadastrar-->
+    <button onclick="cadastrarCliente()" class="botao2">Cadastrar Cliente</button>
+
+    <!-- Confirmação -->
+    <p id="mensagemCadastro"></p>
+    </div>
+
+</body>
+</html>
