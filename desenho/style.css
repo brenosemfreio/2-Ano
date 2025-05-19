@@ -55,9 +55,3 @@ button {
 button:hover {
     background-color: #838383;
 }
-
-#mensagem {
-    margin-top: 20px;
-    font-weight: bold;
-    color: #555;
-}
