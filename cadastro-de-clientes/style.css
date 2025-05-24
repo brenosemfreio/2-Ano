@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('ross-parmly-rf6ywHVkrlY-unsplash-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #343a40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+  .container {
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #0d6efd;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-align: left;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #listaClientesAdultos {
+    padding-left: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
