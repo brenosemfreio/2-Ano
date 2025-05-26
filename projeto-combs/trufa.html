@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Combustível</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form action="" id="formulario">
+            <label for="combustivel">COMBUSTÍVEL:</label>
+
+            <input type="number" name="etanol" id="etanol" placeholder="Etanol" step="0.01">
+
+            <input type="number" name="gasolina" id="gasolina" placeholder="Gasolina" step="0.01">
+
+            <input type="button" value="CALCULAR" onclick="calcular()">
+            <input type="reset" value="LIMPAR" onclick="limpar()">
+        </form>
+
+        <img src="img/tanque.png" alt="tanque-combustivel" class="img-tanque" id="status">
+        <p id="mensagem">Resultado:</p>
+    </div>
+
+    <!-- Carro fora da box -->
+    <img src="img/car-30984_1280.webp" alt="Carro" class="img-carro">
+</body>
+
+</html>
