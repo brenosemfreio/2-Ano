@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#home">Página Inicial</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1><span class="nome">Breno</span> <span class="sobrenome">Dantas</span></h1>
+        <h2><span class="highlight">FrontEnd</span> <span class="normal">Developer</span></h2>
+        <div class="hero-buttons">
+          <a href="#projetos" class="btn btn-sombra">Projetos</a>
+          <a href="#contato" class="btn btn-sombra">Contato</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="img/eumermo.jfif" alt="Minha foto" />
+      </div>
+    </section>
+  </main>
+
+  <section class="habilidades" id="habilidades">
+    <h2>Habilidades</h2>
+
+    <div class="habilidade-item">
+      <img src="img/html.png" alt="Imagem 1" />
+      <div class="progress-container">
+        <span class="progress-text">HTML</span>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 50%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="habilidade-item">
+      <img src="img/html (1).png" alt="Imagem 2" />
+      <div class="progress-container">
+        <span class="progress-text">CSS</span>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 50%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="habilidade-item">
+      <img src="img/html (2).png" alt="Imagem 3" />
+      <div class="progress-container">
+        <span class="progress-text">JavaScript</span>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 15%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projetos" id="projetos">
+    <h2>Projetos</h2>
+    <div class="interface">
+      <section class="sobre">
+        <article class="itens-sobre">
+          <div class="txt-itens">
+            <h3><span>Site de</span><br> Desenho</h3>
+            <p>Site feito especialmente para falar sobre o meu desenho animado favorito da infância, "Apenas um Show".</p>
+          </div>
+          <a href="https://github.com/brenosemfreio/4BIMESTRE/tree/main/Apenas%20um%20Show" target="_blank" class="img-itens">
+            <img src="img/apenasumshow.png" alt="Site Apenas um Show">
+          </a>
+        </article>
+
+        <article class="itens-sobre">
+          <a href="https://github.com/brenosemfreio/3bim-1info-iwi/tree/main/site%20animais" target="_blank" class="img-itens">
+            <img src="img/animalo.png" alt="Página Animais">
+          </a>
+          <div class="txt-itens">
+            <h3><span>Página sobre</span><br> Animais</h3>
+            <p>Página dedicada para explicar e mostrar alguns animais da nossa natureza linda!</p>
+          </div>
+        </article>
+
+        <article class="itens-sobre">
+          <div class="txt-itens">
+            <h3><span>Projeto</span><br> Festa Perfeita</h3>
+            <p>Projeto desenvolvido para simular um site que faria uma festa/casamento para o cliente.</p>
+          </div>
+          <a href="https://github.com/brenosemfreio/tropa-do-mantem/tree/main/Projeto%20festa%20perfeita" target="_blank" class="img-itens">
+            <img src="img/festaperfeita.png" alt="Projeto Festa Perfeita">
+          </a>
+        </article>
+      </section>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <h2>Contato</h2>
+
+    <div id="contatos" class="contato-icones">
+      <a href="mailto:breno.dantas.pc@gmail.com" class="contato-icon" target="_blank">
+        <i class="fa-solid fa-envelope"></i>
+        <span class="contato-tooltip">E‑mail: breno.dantas.pc@gmail.com</span>
+      </a>
+
+      <a href="https://wa.me/5511974064216" class="contato-icon" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="contato-tooltip">WhatsApp: (11) 97406-4216</span>
+      </a>
+
+      <a href="https://instagram.com/dantassfr" class="contato-icon" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+        <span class="contato-tooltip">@dantassfr</span>
+      </a>
+    </div>
+
+    <img id="lampada" src="img/apagada.png" onclick="trocarLampada()" />
+  </section>
+
+  <footer class="rodape">
+    <div class="rodape-conteudo">
+      <div class="rodape-left">
+        <h3 class="nome">Breno<br><span class="sobrenome">Dantas</span></h3>
+        <p class="cargo">FrontEnd <span class="tcp">Developer</span></p>
+      </div>
+      <div class="rodape-right">
+        <a href="#contato"><button class="rodape-btn">Contato</button></a>
+        <a href="#projetos"><button class="rodape-btn">Projetos</button></a>
+        <a href="#habilidades"><button class="rodape-btn">Habilidades</button></a>
+      </div>
+    </div>
+    <p class="rodape-footer-text">© 2025 Breno Dantas - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
